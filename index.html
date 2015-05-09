@@ -2,141 +2,88 @@
 <html>
     <head>
          <title>The Teenage Programmers Chatroom</title>
-        <!-- STYLE SHEET -->
-        <style type="text/css">
-@import url(http://fonts.googleapis.com/css?family=Archivo+Black|Lusitana:400,700|Source+Code+Pro:400,700);
-
-/* RESET: http://meyerweb.com/eric/tools/css/reset/ | v2.0b1 | 201101 */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,
-abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,
-strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,
-figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
-margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:
-baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,
-section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{
-quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';
-content:none;}ins{text-decoration:none;}del{text-decoration:line-through;}table{
-border-collapse:collapse;border-spacing:0;}
-
-body
-{
-    font-family: 'Lusitana', serif;
-    font-weight: 400;
-    color: #1B75B3;
+		 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <style>
+body{
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+	width:100%;
+	margin:0;
+}
+a{
+position:relative;
+display:inline-block;
+color:red;
+text-decoration:none;
+}
+a:after{
+content:'';
+left:50%;
+right:50%;
+position:absolute;
+bottom:0;
+height:2px;
+background:red;
+-o-transition:.3s;
+-ms-transition:.3s;
+-moz-transition:.3s ;
+-webkit-transition:.3s;
+transition:.3s  ;
+}
+a:hover:after{
+left:0;
+right:0;
 }
 
-.title
-{
-    text-align: center;
-    text-transform: uppercase;
-    padding: 32pt;
+header{
+width:100%;
+background:red;
+color:white;
+padding-top:5px;
+padding-bottom:5px;
+font-size:16pt;
 }
-
-.maintitle
-{
-    font-size: 128pt;
-    font-family: 'Archivo Black', sans-serif;
-    color: #A8B9CC;
-    line-height: 0.95;
-    margin-top: -30pt;
+header div{
+float:right;
 }
-
-.subtitle
-{
-    font-size: 32pt;
-    font-weight: 700;
+header a{
+color:white;
+text-decoration:none;
+margin-right:5px;
 }
-
-.sectiontitle
-{
-    font-size: 16pt;
-    font-weight: 400;
-    color: #A8B9CC;
+header a:after{
+background:white;
 }
-
-.info, .example, .sectiontitle
-{
-    text-align: center;
-    padding-bottom: 32pt;
+main{
+display:block;
+width:1000px;
+margin:auto;
 }
-
-table
-{
-    border-top: 1pt solid #A8B9CC;
-    margin-left:  auto;
-    margin-right: auto;
-}
-
-td
-{
-    padding-top: 6pt;
-    text-align: left;
-}
-
-td:first-child { padding-right: 16pt; }
-td:last-child { font-size: 10pt; }
-
-.example_user { font-size: 10pt; }
-
-code
-{
-    font-size: 9pt;
-    font-weight: 400;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.keyword { font-weight: 700; }
-.or { color: #A8B9CC; }
-
-#rules { margin: 10px; }
-        </style>
+</style>
     </head>
     <body>
 <header id="header">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script>
-$(function(){
-  $("#header").load("/header.html");
-});
-</script>
+The Teenage Programers Chatroom <div><a TARGET="_top" href="http://chat.stackoverflow.com/rooms/22091/teenageprogrammerschatroom">the room</a>
+<a TARGET="_top" href="http://chat.stackoverflow.com/">other rooms</a>
+<a TARGET="_top" href="http://www.google.co.uk">Google</a>
+<a TARGET="_top" href="http://stackoverflow.com">Stack Overflow</a></div>
 </header>
-        <div class="title">
-            <p class="subtitle">the</p>
-            <p class="maintitle">teenage</p>
-            <p class="subtitle">programmers</p>
-            <p class="subtitle">chatroom</p>
-        </div>
-
-
-<div class="sectiontitle">Links</div>
-<div class="info">
-<a TARGET="_top" href="http://chat.stackoverflow.com/rooms/22091/teenage-programmers-chatroom">the room</a><br />
-<a TARGET="_top" href="http://chat.stackoverflow.com/">other rooms</a><br />
-<a TARGET="_top" href="http://www.google.co.uk">Google</a><br />
-<a TARGET="_top" href="http://stackoverflow.com">Stack Overflow</a><br />
-GitHub <a TARGET="_top" href="https://gist.github.com/">Gists</a> and <a TARGET="_top" href="https://github.com/new">repositories</a><br />
-</div>
-
-
-
-		<div class="sectiontitle">Rules</div>
-        <div class="info" style="text-align: left;">
-	<p id="rules">The rules for the room are simple:<br />
-	<br />
-    Before asking a question here, ask it on <a TARGET="_top" href="http://stackoverflow.com">Stack Overflow</a> or another <a TARGET="_top" href="http://stackexchange.com">Stack Exchange</a> site.<br />
-    Do not fire off a question before you've researched your problem. Remember, <a TARGET="_top" href="http://www.google.com">Google</a> is always your friend!<br />
-    Use English to the best of your ability and do not use chat-speak. Just try to make sense.<br />
-    Please don't bother ping spamming. This is the practice of constantly posting @username in order to annoy the person.<br />
-    Try to limit in-chat code to a reasonable amount. If you have lots of code to share, how about making a <a TARGET="_top" href="https://gist.github.com/">gist</a>, or even a <a TARGET="_top" href="https://github.com/new">repository</a>. You can also use pastebin, pastie and hastebin. If you post code, it will be removed from chat.<br />
-    Don't flag stuff unless it's obviously flag-worthy. It just annoys whoever invalidates the flags and doesn't help anyone.<br />
-    Do not be a help vampire. This is, attempting to find help and lure attention onto your problems continuously where others show no clear interest in your problems.<br />
-    Don't be creepy, no racism, hate or severe swearwords! Let's be friendly!<br />
-    Remember this room has <strong>no one topic</strong> and people are free to <strong>talk about what they wish</strong> as long as it follows above rules and is loosely related to programming.
-	<br />
-	These are all non-strict and really we'll get along fine if you're not begging for code and help all the time. In other words, be excellent to each other. </p>
-        </div>
-
-
+<main>
+	<h2>Rules</h2>
+	<h3>The rules for the room are simple:</h3>
+	<ul>
+    <li>Before asking a question here, ask it on <a TARGET="_top" href="http://stackoverflow.com">Stack Overflow</a> or another <a TARGET="_top" href="http://stackexchange.com">Stack Exchange</a> site.</li>
+    <li>Do not fire off a question before you've researched your problem. Remember, <a TARGET="_top" href="http://www.google.com">Google</a> is always your friend!</li>
+    <li>Use English to the best of your ability and do not use chatspeak. Just try to make sense.</li>
+    <li>Please don't bother ping spamming. This is the practice of constantly posting @username in order to annoy the person.</li>
+    <li>Try to limit inchat code to a reasonable amount. If you have lots of code to share, how about making a <a TARGET="_top" href="https://gist.github.com/">gist</a>, or even a <a TARGET="_top" href="https://github.com/new">repository</a>. You can also use pastebin, pastie and hastebin. If you post code, it will be removed from chat.</li>
+    <li>Don't flag stuff unless it's obviously flagworthy. It just annoys whoever invalidates the flags and doesn't help anyone.</li>
+    <li>Do not be a help vampire. This is, attempting to find help and lure attention onto your problems continuously where others show no clear interest in your problems.</li>
+    <li>Don't be creepy, no racism, hate or severe swearwords! Let's be friendly!</li>
+    <li>Remember this room has <strong>no one topic</strong> and people are free to <strong>talk about what they wish</strong> as long as it follows above rules and is loosely related to programming.</li>
+	<li>Multi-line messages shall be treated as a crime in this chatroom.</li>
+	</ul>
+	These are all nonstrict and really we'll get along fine if you're not begging for code and help all the time. In other words, be excellent to each other. </p>
+</main>
     </body>
 </html>
