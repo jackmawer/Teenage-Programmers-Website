@@ -1,91 +1,167 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <title>The Teenage Programmers Chatroom</title>
-		 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <style>
-body{
-    font-family: 'Oswald', sans-serif;
-    color: #333;
-	width:100%;
-	margin:0;
-	background:#e8e8e8;
-}
-a{
-position:relative;
-display:inline-block;
-color:#e9352d;
-text-decoration:none;
-}
-a:after{
-content:'';
-left:50%;
-right:50%;
-position:absolute;
-bottom:0;
-height:2px;
-background:#e9352d;
--o-transition:.3s;
--ms-transition:.3s;
--moz-transition:.3s ;
--webkit-transition:.3s;
-transition:.3s  ;
-}
-a:hover:after{
-left:0;
-right:0;
-}
+  
+  <head>
+    <title>
+      The Teenage Programmers Chatroom
+    </title>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <style>
+      body {
+        font-family: 'Oswald', sans-serif;
+        color: #333;
+        width: 100%;
+        margin: 0;
+        background: #e8e8e8;
+      }
+      
+      a {
+        position: relative;
+        display: inline-block;
+        color: #e9352d;
+        text-decoration: none;
+      }
+      
+      a:after {
+        content: '';
+        left: 50%;
+        right: 50%;
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        background: #e9352d;
+        -o-transition: .3s;
+        -ms-transition: .3s;
+        -moz-transition: .3s;
+        -webkit-transition: .3s;
+        transition: .3s;
+      }
+      
+      a:hover:after {
+        left: 0;
+        right: 0;
+      }
+      
+      header {
+        width: 100%;
+        border-bottom: 3px solid #e9352d;
+        background: #333;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 16pt;
+      }
+      
+      header div {
+        float: right;
+      }
+      
+      header a {
+        color: white;
+        text-decoration: none;
+        margin-right: 5px;
+      }
+      
+      header a:after {
+        background: white;
+      }
+      
+      main {
+        display: block;
+        width: 1000px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header id="header">
+      The Teenage Programers Chatroom
+      <div>
+        <a TARGET="_top" href="http://chat.stackoverflow.com/rooms/22091/teenage-programmers-chatroom">
+          the room
+        </a>
+        <a TARGET="_top" href="http://chat.stackoverflow.com/">
+          other rooms
+        </a>
+        <a TARGET="_top" href="http://www.google.com">
+          Google
+        </a>
+        <a TARGET="_top" href="http://stackoverflow.com">
+          Stack Overflow
+        </a>
+      </div>
+    </header>
+    <main>
+      <h2>
+        Rules
+      </h2>
+      <h3>
+        The rules for the room are simple:
+      </h3>
+      <ul>
+        <li>
+          Before asking a question here, ask it on 
+          <a TARGET="_top" href="http://stackoverflow.com">
+            Stack Overflow
+          </a>
+          or another 
+          <a TARGET="_top" href="http://stackexchange.com">
+            Stack Exchange
+          </a>
+          site.
+        </li>
+        <li>
+          Do not fire off a question before you've researched your problem. Remember, 
+          <a TARGET="_top" href="http://www.google.com">
+            Google
+          </a>
+          is always your friend!
+        </li>
+        <li>
+          Use English to the best of your ability and do not use chatspeak. Just try to make sense.
+        </li>
+        <li>
+          Please don't bother ping spamming. This is the practice of constantly posting @username in order to annoy the person.
+        </li>
+        <li>
+          Try to limit inchat code to a reasonable amount. If you have lots of code to share, how about making a 
+          <a TARGET="_top" href="https://gist.github.com/">
+            gist
+          </a>
+          , or even a 
+          <a TARGET="_top" href="https://github.com/new">
+            repository
+          </a>
+          . You can also use pastebin, pastie and hastebin. If you post code, it will be removed from chat.
+        </li>
+        <li>
+          Don't flag stuff unless it's obviously flagworthy. It just annoys whoever invalidates the flags and doesn't help anyone.
+        </li>
+        <li>
+          Do not be a help vampire. This is, attempting to find help and lure attention onto your problems continuously where others show no clear interest in your problems.
+        </li>
+        <li>
+          Don't be creepy, no racism, hate or severe swearwords! Let's be friendly!
+        </li>
+        <li>
+          Remember this room has 
+          <strong>
+            no one topic
+          </strong>
+          and people are free to 
+          <strong>
+            talk about what they wish
+          </strong>
+          as long as it follows above rules and is loosely related to programming.
+        </li>
+        <li>
+          Multi-line messages shall be treated as a crime in this chatroom.
+        </li>
+      </ul>
+      These are all nonstrict and really we'll get along fine if you're not begging for code and help all the time. In other words, be excellent to each other. 
+    </p>
+  </main>
+</body>
 
-header{
-width:100%;
-border-bottom:3px solid #e9352d;
-background:#333;
-color:white;
-padding-top:5px;
-padding-bottom:5px;
-font-size:16pt;
-}
-header div{
-float:right;
-}
-header a{
-color:white;
-text-decoration:none;
-margin-right:5px;
-}
-header a:after{
-background:white;
-}
-main{
-display:block;
-width:1000px;
-margin:auto;
-}
-</style>
-    </head>
-    <body>
-<header id="header">
-The Teenage Programers Chatroom <div><a TARGET="_top" href="http://chat.stackoverflow.com/rooms/22091/teenage-programmers-chatroom">the room</a>
-<a TARGET="_top" href="http://chat.stackoverflow.com/">other rooms</a>
-<a TARGET="_top" href="http://www.google.com">Google</a>
-<a TARGET="_top" href="http://stackoverflow.com">Stack Overflow</a></div>
-</header>
-<main>
-	<h2>Rules</h2>
-	<h3>The rules for the room are simple:</h3>
-	<ul>
-    <li>Before asking a question here, ask it on <a TARGET="_top" href="http://stackoverflow.com">Stack Overflow</a> or another <a TARGET="_top" href="http://stackexchange.com">Stack Exchange</a> site.</li>
-    <li>Do not fire off a question before you've researched your problem. Remember, <a TARGET="_top" href="http://www.google.com">Google</a> is always your friend!</li>
-    <li>Use English to the best of your ability and do not use chatspeak. Just try to make sense.</li>
-    <li>Please don't bother ping spamming. This is the practice of constantly posting @username in order to annoy the person.</li>
-    <li>Try to limit inchat code to a reasonable amount. If you have lots of code to share, how about making a <a TARGET="_top" href="https://gist.github.com/">gist</a>, or even a <a TARGET="_top" href="https://github.com/new">repository</a>. You can also use pastebin, pastie and hastebin. If you post code, it will be removed from chat.</li>
-    <li>Don't flag stuff unless it's obviously flagworthy. It just annoys whoever invalidates the flags and doesn't help anyone.</li>
-    <li>Do not be a help vampire. This is, attempting to find help and lure attention onto your problems continuously where others show no clear interest in your problems.</li>
-    <li>Don't be creepy, no racism, hate or severe swearwords! Let's be friendly!</li>
-    <li>Remember this room has <strong>no one topic</strong> and people are free to <strong>talk about what they wish</strong> as long as it follows above rules and is loosely related to programming.</li>
-	<li>Multi-line messages shall be treated as a crime in this chatroom.</li>
-	</ul>
-	These are all nonstrict and really we'll get along fine if you're not begging for code and help all the time. In other words, be excellent to each other. </p>
-</main>
-    </body>
 </html>
